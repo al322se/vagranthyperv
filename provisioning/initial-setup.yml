@@ -1,0 +1,11 @@
+- hosts: all
+  sudo: yes
+  tasks:
+  - name: testFileName
+    copy:
+    content: ""
+    dest: /etc/nologin
+    force: no
+    group: sys
+    owner: root
+    mode: 0555
